@@ -1,0 +1,82 @@
+{
+	// common
+	"telemetry.telemetryLevel": "off",
+	"workbench.startupEditor": "none",
+	"window.titleBarStyle": "custom",
+	"files.exclude": {
+		".git": true,
+		".yarn": true,
+		".pnp.*": true,
+		"package-lock.json": true,
+		"yarn.lock": true
+	},
+	"editor.insertSpaces": false,
+	"editor.detectIndentation": false,
+	"editor.formatOnSave": true,
+	"editor.codeActionsOnSave": {
+		"source.organizeImports": "explicit"
+	},
+	// java
+	"java.configuration.detectJdksAtStart": false,
+	"java.configuration.runtimes": [
+		{
+			"name": "JavaSE-17",
+			"path": "/usr/local/lib/java17",
+			"default": true
+		},
+		{
+			"name": "JavaSE-11",
+			"path": "/usr/local/lib/java11"
+		}
+	],
+	"java.jdt.ls.java.home": "/usr/local/lib/java17",
+	"java.import.maven.enabled": true,
+	"java.import.gradle.enabled": false,
+	"java.configuration.updateBuildConfiguration": "automatic",
+	"java.format.settings.url": "/home/chrispy/.config/Code/formatter.xml",
+	"java.format.settings.profile": "custom",
+	"java.maven.downloadSources": true,
+	"java.configuration.maven.notCoveredPluginExecutionSeverity": "ignore",
+	"java.cleanup.actions": [
+		"addDeprecated",
+		"addFinalModifier",
+		"addOverride",
+		"instanceofPatternMatch",
+		"invertEquals",
+		"lambdaExpression",
+		"lambdaExpressionFromAnonymousClass",
+		"qualifyMembers",
+		"qualifyStaticMembers",
+		"stringConcatToTextBlock",
+		"switchExpression",
+		"tryWithResource"
+	],
+	"java.codeGeneration.generateComments": true,
+	"java.saveActions.organizeImports": true,
+	"java.server.launchMode": "Standard",
+	// java script
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"[typescript]": {
+		"editor.defaultFormatter": "dbaeumer.vscode-eslint",
+		"eslint.format.enable": true
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "dbaeumer.vscode-eslint",
+		"eslint.format.enable": true
+	},
+	"[html]": {
+		"editor.suggest.insertMode": "insert",
+		"editor.defaultFormatter": "vscode.html-language-features"
+	},
+	"[json]": {
+		"editor.suggest.insertMode": "insert",
+		"editor.defaultFormatter": "vscode.json-language-features"
+	},
+	"[jsonc]": {
+		"editor.suggest.insertMode": "insert",
+		"editor.defaultFormatter": "vscode.json-language-features"
+	},
+	"git.ignoreMissingGitWarning": true,
+	"maven.executable.preferMavenWrapper": false
+}
